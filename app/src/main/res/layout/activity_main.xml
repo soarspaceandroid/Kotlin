@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="ui.android.yonglibao.com.kotlinapplication.MainActivity">
+    tools:context="ui.android.yonglibao.com.kotlinapplication.activity.MainActivity">
 
     <TextView
         android:id="@+id/tips"
@@ -20,6 +20,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Request" />
+
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is first Kotlin project and to learn some knowleage , so..."
+        />
 
 
 </LinearLayout>
