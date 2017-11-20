@@ -12,9 +12,9 @@ package ui.android.yonglibao.com.kotlinapplication.model
  */
 open class BaseBean {
 
-    var nu = ""
-    var message = ""
-    var com = ""
+    lateinit var nu:String
+    lateinit var message:String
+    lateinit var com:String
 
     constructor()
 
