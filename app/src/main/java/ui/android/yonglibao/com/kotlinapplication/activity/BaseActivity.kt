@@ -20,6 +20,8 @@ import java.lang.Exception
  */
 abstract class BaseActivity :AppCompatActivity() {
 
+    
+
     fun requestHttp(url : String){
         OkGo.post(url)
                 .tag(this)

@@ -1,7 +1,5 @@
 package ui.android.yonglibao.com.kotlinapplication.model
 
-import android.util.Log
-
 /**
  *----------------------------------------------------
  *※ Author :  GaoFei
@@ -11,16 +9,8 @@ import android.util.Log
  *※ Package : ui.android.yonglibao.com.kotlinapplication.model
  *----------------------------------------------------
  */
-class Info(var nu:String , var message:String , var com:String , var data:Array<Data>){
-    override fun toString(): String {
-        var content:String ="test"
-        content = nu + " \n "+message +" \n "+ com +" \n "
-        var a:Int = 0
-        while (a < data.size){
-            content  = content + data[a].time + "\n"+data[a].ftime+"\n"+data[a].context
-            a++
-        }
-        Log.e("soar" , "content -- "+content);
-        return content
-    }
+data class Info(var data:Array<Data>):BaseBean(){
+
+    inner class Data(var time:String , var context:String , var ftime:String)
 }
+
